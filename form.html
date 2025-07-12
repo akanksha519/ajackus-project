@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add/Edit Employee</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <h2 id="form-title">Add Employee</h2>
+    <form id="employeeForm">
+      <label>
+        First Name:
+        <input type="text" id="firstName" required />
+        <span class="error" id="firstNameError"></span>
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" id="lastName" required />
+        <span class="error" id="lastNameError"></span>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" id="email" required />
+        <span class="error" id="emailError"></span>
+      </label>
+
+      <label>
+        Department:
+        <select id="department" required>
+          <option value="">Select Department</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Design">Design</option>
+          <option value="HR">HR</option>
+          <option value="Finance">Finance</option>
+          <option value="Support">Support</option>
+        </select>
+        <span class="error" id="departmentError"></span>
+      </label>
+
+      <label>
+        Role:
+        <input type="text" id="role" required />
+        <span class="error" id="roleError"></span>
+      </label>
+
+      <button type="submit">Save</button>
+      <button type="button" onclick="window.location.href='index.html'">
+        Cancel
+      </button>
+    </form>
+
+    <script type="module" src="src/form.js"></script>
+  </body>
+</html>
